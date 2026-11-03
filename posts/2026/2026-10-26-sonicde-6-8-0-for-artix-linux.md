@@ -19,8 +19,6 @@ for an easy transition.
 | :--- | :--- |
 | SonicDE | 6.8.0 |
 | SonicDE Frameworks | 6.31.0 |
-| Qt | 6.12.0 |
-| Graphics platform | X11 (XLibre 1.25.1) |
 
 ## Get help
 
