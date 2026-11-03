@@ -49,12 +49,14 @@ Here's what changed.
 | `excerpt` | No | The text before a `<!-- more -->` line, else the start of the post |
 | `published` | No | `1`. Use `0` for a draft |
 | `categories[]` | No | None. One line per category slug |
-| `[author]` | No | A section with `name` and/or `github`, overriding the author from Git |
 
 - Only the first `;;` line splits the file, so Markdown headings underlined with `===` or
   `---` work normally.
-- The author is whoever made the commit that first added the file. Later edits by other
-  people don't change it.
+- The author is the Git author of the commit that first added the file, so a post sent as
+  a pull request is credited to the person who wrote it, however the pull request is merged
+  (a squash merge keeps them as the author). Later edits and renames by other people don't
+  change it, and a new file is always its own post, even if it was copied from another one.
+  There is no author setting in the file.
 - A post with a future `date` stays hidden until then.
 - Link images with paths relative to the post's file. The site stores them and rewrites
   the links. Only Markdown image syntax (`![alt](path)`) is handled.
