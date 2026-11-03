@@ -32,6 +32,7 @@ date = "2026-11-02 09:00"
 excerpt = "One or two sentences shown in the post list and the RSS feed."
 published = 1
 categories[] = "release-notes"
+teaser = "images/teaser.png"
 ;;
 Sonic-DE 6.8 is out
 ===================
@@ -49,6 +50,7 @@ Here's what changed.
 | `excerpt` | No | The text before a `<!-- more -->` line, else the start of the post |
 | `published` | No | `1`. Use `0` for a draft |
 | `categories[]` | No | None. One line per category slug |
+| `teaser` | No | None. Teaser image, as a path relative to the post's file |
 
 - Only the first `;;` line splits the file, so Markdown headings underlined with `===` or
   `---` work normally.
@@ -60,6 +62,10 @@ Here's what changed.
 - A post with a future `date` stays hidden until then.
 - Link images with paths relative to the post's file. The site stores them and rewrites
   the links. Only Markdown image syntax (`![alt](path)`) is handled.
+- The `teaser` image is shown to the left of the post in the blog lists, and as the image
+  when the post is shared on social media (cropped to 1200×630, so keep the subject near the
+  middle and use at least that size). It isn't shown in the post itself. Without a teaser,
+  the list shows no image and social media gets the site's default image.
 
 ## URLs
 
