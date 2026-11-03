@@ -21,4 +21,4 @@ SonicDE is currently made up of about 140 components, based on Plasma 6.7.5. It 
 
 Find the packages for your distribution on the [Installing SonicDE](https://sonicde.org/installing)
 page. If you'd rather build it yourself, follow the
-[build guide](https://sonicde.org/docs/getting-started/building) in our documentation.
+[build guide](https://sonicde.org/docs/developer/building) in our documentation.
